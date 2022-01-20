@@ -3,7 +3,7 @@ const app = express();
 const HtmlToDocx = require('./routes/htmlToDocx');
 const DeleteFile = require('./routes/deleteFile')
 require('dotenv/config');
-const port = Number(process.env.PORT);
+const port = process.env.PORT || 3000;
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
