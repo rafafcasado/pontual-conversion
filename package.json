@@ -2,7 +2,7 @@
   "name": "pontual-conversion",
   "version": "1.0.0",
   "description": "Convert Html to docx",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "npm i && node server.js",
     "dev": "nodemon index",
