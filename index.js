@@ -4,12 +4,12 @@ const HtmlToDocx = require('./routes/htmlToDocx');
 const DeleteFile = require('./routes/deleteFile')
 require('dotenv/config');
 const port = process.env.PORT || 3000;
-app.use(express.json()) // for parsing application/json
-app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
     console.log(`Bem vindo`);
-    res.send('root')
+    res.send('Api - PontualConversion')
   })
 
 app.post('/htmltodocx',HtmlToDocx);
