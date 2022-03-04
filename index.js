@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const HtmlToDocx = require('./routes/htmlToDocx');
 const DeleteFile = require('./routes/deleteFile')
+const OfxtoJson = require('./routes/OfxToJson')
 require('dotenv/config');
 const port = process.env.PORT || 3000;
 
@@ -15,6 +16,7 @@ app.get('/', (req, res) => {
 
 app.post('/htmltodocx',HtmlToDocx);
 app.post('/deletefile',DeleteFile);
+app.post('/convertOfx',OfxtoJson)
 
 app.listen(port, () => {
     console.log(`listening at http://localhost:${port}`)

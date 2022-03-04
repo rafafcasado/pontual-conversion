@@ -17,6 +17,7 @@
     "dotenv": "^14.2.0",
     "express": "^4.17.2",
     "html-docx-js": "^0.3.1",
-    "jszip": "^3.7.1"   
+    "jszip": "^3.7.1",
+    "node-ofx-parser": "^0.5.1" 
   }
 }
